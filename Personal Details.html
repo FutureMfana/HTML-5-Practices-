@@ -1,0 +1,140 @@
+<!Doctype Html>
+<html>
+    <head>
+        <title>09 Mar 19' 18h35 Practice</title>
+        <script src="Personal Details.js"></script>
+        <link href="Style\Personal Details.css" rel="Stylesheet"/>
+    </head>
+    <body>
+        <form action="Personal Details.php" method="POST">
+            <fieldset><legend>Personal Details</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Name:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="name" id="name" placeholder="Name" onblur="name_func()"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="error_name"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sur">Surname:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="sur" name="sur" placeholder="Surname" onblur="sur_func()"/>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <label id="error_sur"></label>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td>
+                            <label for="id_no">Identity Number:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="id_no" id="id_no" placeholder="Identity Number" onblur="id_func()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="error_id_no"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dob">Date of Birth:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" readonly id="dob" name="dob" placeholder="Date of Birth" max-length="13"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="error_dob"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">Gender:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="gender" id="gender" disabled>
+                                <option value="None">-Gender unspecified-</option>
+                                <option value="Female">Female</option>
+                                <option value="Male">Male</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <label id="error_gender"></label>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td>
+                            <label for="nationality">Nationality:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="nationality" id="nationality" disabled>
+                                <option value="None">-Nationality unspecified-</option>
+                                <option value="South African Citizen">South African Resident</option>
+                                <option value="Permanent South African Resident">Permanent South African Resident</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <label id="error_nationality"></label>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td>
+                            <label for="race">Race:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="race" id="race" onblur="func_race()">
+                                <option value="None">-Race unspecified-</option>
+                                <option value="African">African</option>
+                                <option value="Asian">Asian</option>
+                                <option value="Coloured">Coloured</option>
+                                <option value="White">White</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <label id="error_race"></label>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="Save" onclick="btnSave()"/>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>

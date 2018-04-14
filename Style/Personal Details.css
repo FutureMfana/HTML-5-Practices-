@@ -1,0 +1,45 @@
+body{
+    background-color: #F9CED5;
+    color: rgb(131, 158, 97);
+}
+label{
+    color: rgb(132, 170, 88);
+    width: 75%;
+}
+form{
+    width: 840px;
+    align-self: auto;
+    margin: auto;
+}
+input[type=button]{
+    width: 750px;
+    height: 50px;
+    font-size: 43px;
+    padding-bottom: 5px;
+    background-color: lightpink;
+    color: #B67D88;
+    font-variant: small-caps;
+    font-family: monospace;
+}
+input, select, button, label{
+    margin-left: 15px;
+}
+input[type=text], select{
+    width: 750px;
+    height: 30px;
+    background-color: lightpink;
+    border-bottom: 2px lightgray solid;
+    padding: 5px;
+    color: #767171;
+    font-size: 12px;
+}
+legend{
+    color: #5C7C5C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+input[type=radio]{
+    background-color: #F9CED5;
+    height: 12px;
+}
